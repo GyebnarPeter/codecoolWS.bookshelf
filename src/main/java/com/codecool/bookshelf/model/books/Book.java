@@ -1,5 +1,10 @@
 package com.codecool.bookshelf.model.books;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
 public class Book {
     private static long idc=0;
     private final long id;
@@ -22,30 +27,6 @@ public class Book {
 
     public String getBookInfo(){
         return author+": "+title+" ("+releaseYear+")";
-    }
-
-    public int getReleaseYear() {
-        return releaseYear;
-    }
-
-    public int getWeightInGram() {
-        return weightInGram;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public int getNumberOfPages() {
-        return numberOfPages;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public GenreType getGenre() {
-        return genre;
     }
 }
 
